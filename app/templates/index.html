@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hello, below is a simple calculator</h1>
+<h1>Feel free to try it out</h1>
+<p>Insert Calculator here</p>
+<p>This one just uses basic html</p>
+<form action="" method="POST" name="login">
+	{{form.hidden_tag()}}
+	<p>
+		First Number: <br>
+		{{form.num01(size=10)}}<br>
+	</p>
+	<p>
+		Operator:
+		{{form.op()}}
+	</p>
+	<p>
+		Second Number: <br>
+		{{form.num02(size=10)}}<br>
+	</p>
+	<p><input type="submit" value="Submit Number"></p>
+</form>
+{% endblock %}

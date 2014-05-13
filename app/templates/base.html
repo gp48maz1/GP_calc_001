@@ -1,0 +1,14 @@
+<html>
+	<head>
+		{% if title %}
+		<title>{{title}} - Calculator</title>
+		{% else %}
+		<title> No Title Calculator
+		{% endif %}
+	</head>
+	<body>
+		<div>Calculator: </div>
+		<h3>Content would go here</h3>
+		{% block content %}{% endblock %}
+	</body>
+</html>
