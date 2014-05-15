@@ -5,8 +5,21 @@
 		{% else %}
 		<title> No Title Calculator
 		{% endif %}
+		<strong><link rel="stylesheet" href = "{{ url_for('static', filename='css/main.css') }}">;
 	</head>
 	<body>
+		<header>
+			<div class="container">
+				<h1 class="logo">Calculator App</h1>
+				<strong><nav>
+					<ul class = "menu">
+						<li><a href="{{ url_for('index') }}">Home</a></li>
+						<li><a href="{{ url_for('about') }}">About</a></li>
+					</ul>
+				</nav></strong>
+			</div>
+		</header>
+		
 		<div>Calculator: </div>
 		<h3>Content would go here</h3>
 		{% block content %}{% endblock %}

@@ -1,0 +1,36 @@
+header h1.logo {
+	margin: 0 ;
+	font-size: 1.7em;
+	color: #fff;
+	text-transform: uppercase;
+	float: left;
+}
+
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+/*
+* Display navigation links inline
+*/
+
+.menu {
+	float: right;
+	margin-top: 8px;
+}
+
+.menu li {
+	display: inline;
+}
+
+.menu li + li {
+	margin-left: 35px;
+}
+
+.menu li a {
+	color: #999;
+	text-decoration: none;
+}

@@ -5,6 +5,13 @@ from forms import CalcForm
 app.debug = True
 
 @app.route('/', methods = ['GET', 'POST'])
+
+@app.route('/about', methods = ['GET'])
+def about():
+	return render_template("about.html",
+		title='About'
+		)
+
 @app.route('/index', methods =['GET', 'POST'])
 def index():
 	#operators = [ ' + ', ' - ', ' * ', ' / ']
