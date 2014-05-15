@@ -4,7 +4,7 @@
 <h1>Feel free to try it out</h1>
 <p>Insert Calculator here</p>
 <p>This one just uses basic html</p>
-<form action="" method="POST" name="login">
+<form action="/index" method="POST">
 	{{form.hidden_tag()}}
 	<p>
 		First Number: <br>
@@ -17,6 +17,11 @@
 	<p>
 		Second Number: <br>
 		{{form.num02(size=10)}}<br>
+	</p>
+	<p>
+		Answer: <br>
+		{{answer}}<br>
+		{{error}}
 	</p>
 	<p><input type="submit" value="Submit Number"></p>
 </form>

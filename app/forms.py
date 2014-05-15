@@ -7,3 +7,5 @@ class CalcForm(Form):
 	num02 = TextField('num02', validators = [Required()])
 	op = RadioField('op', choices=[('+','+'),('-','-'),('*','*'),('/','/')])
 
+#how do I make the radio button default to one specific one?
+#how would Ihave made a drop down?
